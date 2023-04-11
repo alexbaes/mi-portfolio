@@ -1,0 +1,133 @@
+/* Custom properties */
+
+:root {
+    --primary-dark-color: #1f242d;
+    --secondary-dar-color: #323946;
+    --primary-white-color: #f0f0f0;
+    --accent-color: #0ef;
+
+    /* Tipografia */
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: Verdana;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-dark-color: #f0f0f0;
+        --secondary-dark-color: #e6e6e6;
+        --primary-white-color: #1f242d;
+    }
+}
+
+/* Optional */
+/* Configure if an user has activated the high contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+    }
+}
+
+/*Desactivate the animations if an user has desactivated the animations mode */
+@media (prefers-reduced-motion: reduce){
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Avoid problems with images */
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover; /*optional*/
+    object-position: center center; /*optional*/
+}
+
+/* Reset links to work like boxes */
+a {
+    display: block;
+}
+
+/* Except those that are within the paragraphs */
+p a {
+    display: inline;
+}
+
+/* Remove list style type <li> */
+li {
+    list-style-type: none;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+/* Disable default styles for main text tags */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i , b, u , em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Avoid problems with quotes pseudoelements */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Configure the select text */
+::selection {
+    background-color: var(--primary-white-color);
+    color: var(--primary-dark-color)
+}
+
+/* Level typographical and form placement issues */
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    appearance: none; /*optional*/
+}
+
+/* Reset the tables */
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Avoid SVG problems */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* Typography settings */
+body {
+    min-height: 100vh;
+    font-family: var(--main-font);
+    color: var(--primary-white-color);
+    background-color: var(--primary-dark-color);
+    line-height: 1.5em;
+}
