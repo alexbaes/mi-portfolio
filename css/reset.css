@@ -1,31 +1,37 @@
 /* Custom properties */
 
 :root {
-    --primary-dark-color: #1f242d;
-    --secondary-dar-color: #323946;
+    --primary-dark-color: #14171c;
+    --secondary-dark-color: #323946;
     --primary-white-color: #f0f0f0;
     --accent-color: #0ef;
 
     /* Tipografia */
     --main-font: 'Poppins', sans-serif;
     --secondary-font: Verdana;
+    
+    /* max-width */
+    --max-width: 1200px;
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     :root {
         --primary-dark-color: #f0f0f0;
         --secondary-dark-color: #e6e6e6;
         --primary-white-color: #1f242d;
     }
+
 }
+*/
 
 /* Optional */
 /* Configure if an user has activated the high contrast mode */
 @media (prefers-contrast: high) {
     :root {
-        --primary-color: #000;
-        --secondary-color: #fff;
+        --primary-dark-color: #000;
+        --secondary-dark-color: #000;
+        --primary-white-color: #fff;
     }
 }
 
@@ -127,7 +133,9 @@ svg {
 body {
     min-height: 100vh;
     font-family: var(--main-font);
-    color: var(--primary-white-color);
+    line-height: 1.6;
     background-color: var(--primary-dark-color);
-    line-height: 1.5em;
+    color: var(--primary-white-color);
+    max-width: var(--max-width);
+    margin: 0 auto;
 }

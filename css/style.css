@@ -1,0 +1,80 @@
+/* Custom properties */
+
+:root {
+    --primary-dark-color: #14171c;
+    --secondary-dark-color: #323946;
+    --primary-white-color: #f0f0f0;
+    --accent-color: #0ef;
+
+    /* Tipografia */
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: Verdana;
+}
+
+h1{ font-size: 4rem; }
+h2{ font-size: 3.2rem; }
+h3{ font-size: 2.6rem; }
+h4{ font-size: 2rem; }
+h5{ font-size: 1.6rem; }
+h6{ font-size: 1.2rem; }
+
+.active{ color: var(--accent-color); }
+
+
+/* *********** SITE SYTLES ********** */
+
+/* *** Header *** */
+.header {
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 2rem;
+    font-size: 2.4rem;
+    background-color: var(--primary-dark-color);
+}
+
+.navbar {
+    position: absolute;
+    top: 6rem;
+    left:0;
+    display: none;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: right;
+    background-color: var(--primary-dark-color);
+}
+
+.navbar.show { 
+    display: flex; 
+    flex-direction: column;
+}
+
+.glass {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+  }
+  
+
+@media screen and (min-width:1024px){
+    .menu-icon { display: none; }
+
+    .navbar {
+        position: static;
+        top: 0;
+        right:0;
+        display: flex;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .navbar a { padding-left: 3rem;}
+
+}
