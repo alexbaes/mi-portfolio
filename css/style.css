@@ -1,7 +1,7 @@
 /* Custom properties */
 
 :root {
-    --primary-dark-color: #14171c;
+    --primary-dark-color: #1b202a;
     --secondary-dark-color: #323946;
     --primary-white-color: #f0f0f0;
     --accent-color: #0ef;
@@ -19,6 +19,40 @@ h5{ font-size: 1.6rem; }
 h6{ font-size: 1.2rem; }
 
 .active{ color: var(--accent-color); }
+
+section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+    max-width: 1200px;
+    border: 1px solid green;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    color: var(--primary-dark-color);
+    background-color: var(--accent-color);
+    box-shadow: 0 0 .6rem var(--accent-color)
+}
+
+.btn:hover { box-shadow: none; }
+
+@media screen and (min-width:1020px) {
+    
+    h1{ font-size: 7rem; }
+    h2{ font-size: 5.8rem; }
+    h3{ font-size: 4rem; }
+    h4{ font-size: 3.2rem; }
+    h5{ font-size: 2.6rem; }
+    h6{ font-size: 2rem; }
+    
+    section {
+        padding: 5rem 4rem;
+    }
+}
+
 
 
 /* *********** SITE SYTLES ********** */
@@ -76,5 +110,67 @@ h6{ font-size: 1.2rem; }
     }
 
     .navbar a { padding-left: 3rem;}
+}
 
+/* *** Home section *** */
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content{ 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem; 
+}
+
+.home-content h1 {font-weight: 700;}
+
+.home-social-media { 
+    display: flex; 
+    margin: 3rem 0;
+}
+
+.home-social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: .2rem solid var(--accent-color);
+    background-color: transparent;
+    transition: .6s ease;
+}
+
+.home-social-media a:hover{ 
+    background-color: var(--accent-color);
+    box-shadow: 0 0 .5rem var(--accent-color);
+}
+
+.home-social-media a:first-child{ margin-left: 0;}
+
+.home-content .btn{ align-self: start; }
+
+.home-image img{
+    margin: 0 auto;
+    width: 60%;
+    max-width: 300px;
+}
+
+@media screen and (min-width:768px){
+    .home{ 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .home-content{
+        width: 50%; 
+        margin-bottom: 0;
+    }
+
+    .home-image{ width: 50%; }
 }
