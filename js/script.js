@@ -3,6 +3,7 @@ const menuBtn = document.querySelector('.menu-icon');
 const navbar = document.querySelector('.navbar');
 const navbarLinks = document.querySelectorAll('.navbar a');
 
+
 menuBtn.addEventListener('click', ()=> {
     navbar.classList.toggle('show');
 });
@@ -25,8 +26,8 @@ window.addEventListener('scroll', () => {
   }
 });
 
-/*const sections = document.querySelectorAll('section');
-const navbarLinks = document.querySelectorAll('.navbar a');
+/* Change link color on scroll*/
+const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
   let current = '';
@@ -35,7 +36,7 @@ window.addEventListener('scroll', () => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
 
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
       current = section.getAttribute('id');
     }
   });
@@ -47,5 +48,18 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-*/
 
+
+/*Show more portfolio projects */
+const content = document.getElementById("extra-portfolio-content");
+const showMoreBtn = document.getElementById("showMoreBtn");
+
+showMoreBtn.addEventListener("click", function(){
+  if (content.classList.contains("hidden")) {
+    content.classList.remove("hidden");
+    showMoreBtn.innerHTML = "Mostrar menos";
+  } else {
+    content.classList.add("hidden");
+    showMoreBtn.innerHTML = "Mostrar más";
+  }
+});

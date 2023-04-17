@@ -136,6 +136,4 @@ body {
     line-height: 1.6;
     background-color: var(--primary-dark-color);
     color: var(--primary-white-color);
-    max-width: var(--max-width);
-    margin: 0 auto;
 }

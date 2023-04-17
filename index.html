@@ -13,18 +13,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">AlexBaes.</a>
 
-        <i class='bx bx-menu menu-icon'></i>
-        <nav class="navbar">
-            <a href="#" class="active">Inicio</a>
-            <a href="#about">Sobre Mi</a>
-            <a href="#services">Servicios</a>
-            <a href="#portfolio">Portfalio</a>
-            <a href="#contact">Contacto</a>
-        </nav>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">AlexBaes.</a>
+
+            <i class='bx bx-menu menu-icon'></i>
+            <nav class="navbar">
+                <a href="#" class="active">Inicio</a>
+                <a href="#about">Sobre Mi</a>
+                <a href="#services">Servicios</a>
+                <a href="#portfolio">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+
     </header>
+    
     <section id="home" class="home">
         <div class="home-content">
             <h1>Àlex Barberà</h1>
@@ -34,12 +39,195 @@
                 <a href="https://github.com/alexbaes" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
                 <a href="mailto:alex@baesaudiovisual.com" target="_blank" rel="noopener"><i class='bx bx-envelope'></i></a>
             </div>
-            <button class="btn">Descargar CV</button>
+            <button class="btn"><a href="">Descargar CV</a></button>
         </div>
         <div class="home-image">
-            <img src="assets/alexbaes.png" alt="Imagen perfil AlexBaes">
+            <img src="img/alexbaes.png" alt="Imagen perfil AlexBaes">
         </div>
     </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Sobre mí</h2>
+            <p>+ de 2 años de experiencia desarrollando sitios web en WordPress me han servido para crear diversos tipos de proyectos adaptados a los clientes; OnePage, Corporativos, E-Commerce, Reservas...</p>
+            <p>Y estudiar un Master en Desarrollo de Aplicaciones y Sitios web me ha dado la oportunidad de aprender diversos lenguajes y frameworks, los cuales he aplicado en diversos proyectos durante el curso.</p>
+            <button class="btn"><a href="#contact">¡Hablemos!</a></button>
+        </div>
+        <div class="about-skills">
+            <p class="skill">HTML5</p>
+            <p class="skill">CSS3</p>
+            <p class="skill">JavaScript</p>
+            <p class="skill">TypeScript</p>
+            <p class="skill">Angular</p>
+            <p class="skill">Laravel</p>
+            <p class="skill">Bootstrap</p>
+            <p class="skill">SEO</p>
+            <p class="skill">Git</p>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Qué te ofrezco</h2>
+        <div class="services-content">
+            <div class="service-card">
+                <i class='bx bxs-devices'></i>
+                <h3>Desarrollo Web en WordPress</h3>
+                <p>¿Necesitas un sitio web fácil de administrar y personalizar? Puedo crear un proyecto con WordPress, una plataforma flexible y escalable que te permitirá presencia en línea de forma rápida y efiaz para cumplir con tus objetivos.</p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-code-alt'></i>
+                <h3>Desarrollo Web a medida</h3>
+                <p>Cómo desarrollador te puedo crear un sitio web a medida que se adapte a tus objetivos y necesidades. Desde la planificación hasta el diseño y la implementación, trabajaré contigo para crear un sitio web que refleje tu marca.</p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-search'></i>
+                <h3>Visibilidad Web (SEO)</h3>
+                <p>¿Quieres aumentar la visibilidad de tu sitio web en los motores de búsqueda y atraer más tráfico a tu sitio? Puedo ayudarte a mejorar la clasificación de tu sitio web en los resultados de búsqueda y aumentar el número de visitas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Mis proyectos</h2>
+        <h3>Proyectos WordPress</h3>
+        <p>Estos proyectos han sido desarrollados con WordPress para clientes</p>
+        <div class="portfolio-content">
+            <div class="portfolio-card">
+                <img class="card-image" src="img/baestravel.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>baestravel.com</p>
+                    <p>Blog de viajes <br> SEO</p>
+                    <small><a href="https://baestravel.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/circuitcalafat.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>circuitcalafat.com</p>
+                    <p>Calendario de reservas <br> Plataforma de pago</p>
+                    <small><a href="https://circuitcalafat.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/coperello.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>coperello.com</p>
+                    <p>E-Commerce <br> WooCommerce</p>
+                    <small><a href="https://coperello.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/construgrup.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>construgrup.com</p>
+                    <p>Corporativo <br> Galería</p>
+                    <small><a href="https://construgrup.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/nutrisalud.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>cristinanutrisalud.com</p>
+                    <p>One Page <br> WooCommerce</p>
+                    <small><a href="https://cristinanutrisalud.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/lanzamientos.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>lanzamientosespaciales.com</p>
+                    <p>Calendario de eventos <br> Blog</p>
+                    <small><a href="https://lanzamientosespaciales.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+        </div>
+        <div id="extra-portfolio-content" class="portfolio-content hidden">
+            <div class="portfolio-card">
+                <img class="card-image" src="img/casasabate.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>casasabate.com</p>
+                    <p>Corporativa <br> Productos</p>
+                    <small><a href="https://casasabate.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/rutesperello.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>ruteselperello.com</p>
+                    <p>Turismo <br> Tarjetas rutas</p>
+                    <small><a href="https://ruteselperello.cat" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/cqhabitat.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>cqhabitat.com</p>
+                    <p>Corporativa<br> One Page</p>
+                    <small><a href="https://cqhabitat.com" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-more-content-btn">
+            <button id="showMoreBtn" class="btn">Mostrar más</button>
+        </div>
+        <h3>Proyectos de programación</h3>
+        <p>Estos proyectos han sido desarrollados durante el Master</p>
+        <div class="portfolio-content">
+            <div class="portfolio-card">
+                <img class="card-image" src="img/rickymorty.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>App Rick y Morty</p>
+                    <p>Angular <br> Typescript</p>
+                    <small><a href="https://rick-y-morty-app.netlify.app/" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/jazzmusic.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>Web Jazz Music</p>
+                    <p>HTML & SCSS<br> Bootstrap</p>
+                    <small><a href="https://gentlejazz.netlify.app/" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img class="card-image" src="img/stephenking.png" alt="Descripción de la imagen">
+                <div class="card-info">
+                    <p>Web Stephen King Fans</p>
+                    <p>HTML5 <br> CSS3</p>
+                    <small><a href="https://alexbaes.netlify.app/" target="_blank" rel="noopener">Ver sitio <i class='bx bx-link-external'></i></a></small>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-more-content-btn">
+            <button class="btn">
+                <a href="https://github.com/alexbaes" target="_blank" rel="noopener">Ver proyectos en Github <i class="bx bxl-github"></i></a>
+            </button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+            <h2>Contacta</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" required placeholder="Nombre*">
+                    <input type="email" id="email" name="email" required placeholder="Correo*">
+                </div>
+                <div class="form-row">
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    <input type="text" id="subject" name="subject" placeholder="Asunto">
+                </div>
+                <textarea id="message" name="message" rows="5" cols="30" required placeholder="Mensaje*"></textarea>
+                <input type="submit" value="Enviar" class="btn"> 
+            </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2023 | Diseñado por Àlex Barberà</p>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+
+    </footer>
     
     <script src="js/script.js"></script>
 </body>
