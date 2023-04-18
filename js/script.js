@@ -63,3 +63,46 @@ showMoreBtn.addEventListener("click", function(){
     showMoreBtn.innerHTML = "Mostrar más";
   }
 });
+
+/* Scroll reveal */
+
+ScrollReveal({ 
+  //reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .about-content, .services h2, .portfolio', { 
+  origin: 'top'});
+
+ScrollReveal().reveal('.home-image, .contact-form, .portfolio h3',  { 
+  origin: 'bottom'});
+
+ScrollReveal().reveal('.home-content h1, .about-content h2, .portfolio h2', { 
+  origin: 'left'});
+
+ScrollReveal().reveal('.home-social-media, .about-skills, .contact h2', { 
+  origin: 'right'});
+
+/*conctat form */
+const $form = document.querySelector('.contact-form');
+
+$form.addEventListener('submit', handleSubmit);
+
+async function handleSubmit(e){
+  e.preventDefault();
+  const form = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+ 
+  if(response.ok) {
+    this.reset();
+    swal('Gracias por contactarme!','','success')
+  }
+}
