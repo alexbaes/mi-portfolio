@@ -4,7 +4,7 @@
     --primary-dark-color: #1b202a;
     --secondary-dark-color: #323946;
     --primary-white-color: #f0f0f0;
-    --accent-color: #0ef;
+    --accent-color: rgb(245, 150, 26);
 
     /* Tipografia */
     --main-font: 'Poppins', sans-serif;
